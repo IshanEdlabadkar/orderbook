@@ -1,4 +1,5 @@
-﻿import java.time.Instant;
+package orderbook;
+import java.time.Instant;
 public class Order {
   final long price;
   final Side side;
@@ -22,6 +23,10 @@ public class Order {
     this.remainingQuantity = remainingQuantity;
   }
 
+  public long getRemainingQuantity() {
+    return remainingQuantity;
+  }
+
   public Side getSide() {
     return side;
   }
@@ -32,6 +37,10 @@ public class Order {
 
   public long getOrderId() {
     return orderId;
+  }
+
+  public long getQuantity() {
+    return quantity;
   }
   
 }

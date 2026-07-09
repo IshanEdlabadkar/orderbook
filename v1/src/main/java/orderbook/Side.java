@@ -1,1 +1,2 @@
-﻿public enum Side { BUY, SELL }
+package orderbook;
+public enum Side { BUY, SELL }
